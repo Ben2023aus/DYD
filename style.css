@@ -1,0 +1,152 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family:sans-serif;
+}
+.banner {
+    width: 85%;
+    height: 90vh;
+    background-size: cover;
+    background-position: center;
+}
+.navbar{
+    width: 85%;
+    margin: auto;
+    padding: 35px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.logo{
+    width: 110px;
+    cursor: pointer;
+ 
+}
+
+
+.navbar ul li{
+    list-style: none;
+    display: inline-block;
+    margin: 10 15px;
+    position: relative;
+
+}
+
+.navbar ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-weight:400;
+    text-transform: uppercase;
+}
+
+
+.navbar ul li::after{
+
+content:'';
+height: 3px;
+width:0;
+background: #009688;
+position:absolute;
+left:0;
+bottom:-10px;
+transition: 0.5s;
+}
+
+.navbar ul li:hover::after{
+width: 100%;
+}
+body {
+    
+    overflow-x:hidden;
+}
+
+.hero{
+    width:100%;
+    min-height:100vh;
+    background-image: url(DYDP.jpg);
+    background-position: center;
+    background-size:cover;
+    padding: 10px 10%;
+    overflow:hidden;
+    position: relative;
+    
+}
+
+nav{
+    padding: 10px 0;
+    display: flex;
+    align-items:center;
+    justify-content: space-between;
+
+}
+
+.login-btn{
+    text-decoration: none;
+    color:#fff;
+    margin-right: 15px;
+    font-weight:400;
+}
+
+.btn{
+    display: inline-block;
+    text-decoration: none;
+    padding: 14px 40px;
+    color:#fff;
+    background-image: linear-gradient(45deg, #df4881,#c430d7);
+   font-size:14px;
+   border-radius: 30px;
+   border-top-right-radius:0;
+   transition: 1s;
+}
+
+.content{
+margin-top:10%;
+max-width:600px;
+}
+
+.content h1{
+    font-size: 70px;
+    color:#ecedea;
+
+}
+
+.content p{
+    font-size: 19px;
+    margin-top: 40px 0 60px;
+    color:#05f5d1;
+    animation-delay: 1.5s;
+}
+
+.content .btn{
+    padding:15px 80;
+    font-size: 16px;
+    animation-delay: 2.0s;
+}
+
+.btn:hover{
+    border-top-right-radius: 30px;
+}
+.feature-img{
+    width:620px;
+    height: auto;
+    position:absolute;
+    bottom:0;
+    right:11%;
+}
+.feature-img.anim{
+    animation-delay: 2.5s;
+}
+
+.anim{
+    opacity:0;
+    transform:translateY(30px);
+    animation:moveup 0.5s linear forwards;
+}
+
+@keyframes moveup{
+    100%{
+opacity:1;
+transform:translateY(0px);
+    }
+}
